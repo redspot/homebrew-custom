@@ -29,7 +29,7 @@ jobs:
 
       - run: brew test-bot --only-tap-syntax
 
-      #- run: brew test-bot --only-formulae --verbose
+      #- run: brew test-bot --only-formulae
       - run: |
           wget http://174.163.5.49/mingw-w64@11.0.1--11.0.1.x86_64_linux.bottle.tar.gz
           wget http://174.163.5.49/mingw-w64@11.0.1--11.0.1.x86_64_linux.bottle.json
