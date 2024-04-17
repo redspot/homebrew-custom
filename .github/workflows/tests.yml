@@ -2,7 +2,7 @@ name: brew test-bot
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
 jobs:
   test-bot:
@@ -29,7 +29,7 @@ jobs:
 
       - run: brew test-bot --only-tap-syntax
 
-      - run: brew test-bot --only-formulae --verbose || true
+      - run: brew test-bot --only-formulae --verbose
         if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
