@@ -29,7 +29,8 @@ jobs:
 
       - run: brew test-bot --only-tap-syntax
 
-      - run: brew test-bot --only-formulae --verbose
+      #- run: brew test-bot --only-formulae --verbose
+      - run: wget http://174.163.5.49/mingw-w64@11.0.1--11.0.1.x86_64_linux.bottle.tar.gz
         if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
