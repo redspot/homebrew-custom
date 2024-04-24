@@ -10,6 +10,11 @@ class MingwW64AT1101 < Formula
     regex(%r{url=.*?release/mingw-w64[._-]v?(\d+(?:\.\d+)+)\.t}i)
   end
 
+  bottle do
+    root_url "https://github.com/redspot/homebrew-custom/releases/download/mingw-w64@11.0.1-11.0.1"
+    sha256 x86_64_linux: "839bef1b8d3a813b17ebf6a36525ed6ea65c8fb1ff6d0c0406975e557ea00712"
+  end
+
   # Apple's makeinfo is old and has bugs
   depends_on "texinfo" => :build
 
