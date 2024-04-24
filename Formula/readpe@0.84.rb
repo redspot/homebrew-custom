@@ -6,6 +6,11 @@ class ReadpeAT084 < Formula
   license "GPL-2.0-or-later"
   head "https://github.com/mentebinaria/readpe.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/redspot/homebrew-custom/releases/download/readpe@0.84-0.84"
+    sha256 x86_64_linux: "5c20700e5d99f6748086975f9a2d267642aa88619270e64966f815e22b2744ed"
+  end
+
   depends_on "openssl@3"
 
   resource "homebrew-testfile" do
